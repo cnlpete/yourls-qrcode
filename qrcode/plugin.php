@@ -2,7 +2,7 @@
 Plugin Name: QR Code Short URLs
 Plugin URI: http://github.com/cnlpete/yourls-qrcode
 Description: Add .qr to shorturls to display QR Code
-Version: 0.1.0
+Version: 0.2.0
 Author: Hauke Schade
 Author URI: http://hauke-schade.de
 (c) 2013+ Hauke Schade
@@ -28,6 +28,7 @@ function qrc_yourls_qrcode( $request ) {
 
 			// Show the QR code then!
 			QRcode::png($url);
+			exit;
 		}
 	}
 }
